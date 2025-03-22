@@ -31,7 +31,7 @@ const routes = [
   {
     path: '/profile',
     name: 'Profile',
-    component: () => import('../views/Profile.vue'),
+    component: () => import('../views/ParentProfile.vue'),
     meta: {
       showNav: true,
       requiresAuth: true,
@@ -47,9 +47,36 @@ const routes = [
     },
   },
   {
+    path: '/my-posts',
+    name: 'MyPosts',
+    component: () => import('../views/MyPosts.vue'),
+    meta: {
+      showNav: true,
+      requiresAuth: true,
+    },
+  },
+  {
     path: '/teachers',
     name: 'Teachers',
     component: () => import('../views/Teachers.vue'),
+    meta: {
+      showNav: true,
+      requiresAuth: true,
+    },
+  },
+  {
+    path: '/contact-tutor/:id',
+    name: 'ContactTutor',
+    component: () => import('../views/ContactTutor.vue'),
+    meta: {
+      showNav: true,
+      requiresAuth: true,
+    },
+  },
+  {
+    path: '/messages',
+    name: 'MessageCenter',
+    component: () => import('../views/MessageCenter.vue'),
     meta: {
       showNav: true,
       requiresAuth: true,
@@ -64,10 +91,9 @@ const router = createRouter({
 
 // 路由守卫
 router.beforeEach((to, from, next) => {
-  
   // 获取userStore实例
   const userStore = useUserStore()
-  
+
   // 需要认证且未登录
   if (to.meta.requiresAuth && !userStore.token) {
     next('/login')
@@ -82,6 +108,5 @@ router.beforeEach((to, from, next) => {
 
   next()
 })
-
 
 export default router

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="200" height="150" rx="10" fill="white" fill-opacity="0.1"/>
+  
+  <!-- 教师形象 -->
+  <circle cx="70" cy="50" r="20" fill="#FFFFFF"/>
+  <path d="M70 80C57.85 80 48 70.15 48 58V58C48 57.45 48.45 57 49 57H91C91.55 57 92 57.45 92 58V58C92 70.15 82.15 80 70 80Z" fill="#FFFFFF"/>
+  <rect x="60" y="80" width="20" height="30" rx="2" fill="#FFFFFF"/>
+  
+  <!-- 学生形象 -->
+  <circle cx="130" cy="60" r="15" fill="#FFFFFF"/>
+  <path d="M130 85C120.61 85 113 77.39 113 68V68C113 67.45 113.45 67 114 67H146C146.55 67 147 67.45 147 68V68C147 77.39 139.39 85 130 85Z" fill="#FFFFFF"/>
+  <rect x="122" y="85" width="16" height="25" rx="2" fill="#FFFFFF"/>
+  
+  <!-- 书本 -->
+  <rect x="95" y="90" width="20" height="25" rx="2" fill="#FFFFFF"/>
+  <path d="M95 95H115M95 100H115M95 105H115" stroke="#165DFF" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- 连接线 - 表示教学关系 -->
+  <path d="M85 65C95 60 105 75 115 70" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4 2"/>
+  
+  <!-- 装饰元素 - 星星 -->
+  <path d="M40 30L42.5 35L48 36L44 40L45 45L40 42.5L35 45L36 40L32 36L37.5 35L40 30Z" fill="#FFFFFF"/>
+  <path d="M160 40L162.5 45L168 46L164 50L165 55L160 52.5L155 55L156 50L152 46L157.5 45L160 40Z" fill="#FFFFFF"/>
+  <path d="M100 20L102.5 25L108 26L104 30L105 35L100 32.5L95 35L96 30L92 26L97.5 25L100 20Z" fill="#FFFFFF"/>
+</svg>
